@@ -49,3 +49,8 @@ Project: Recommending Movies for Users based on User movie ratings, demographic 
 
 # ALS in Pyspark
 
+Spark ALS model was used first as a baseline prediction. After training the model on the data/training.csv dataset and predicting scores for the data/requests.csv dataset, we found that there were approx. 47% of the ratings with NaN values – meaning a classic ‘cold start’ problem.
+
+<img alt='pyspark2' src='images/pyspark_2.png' width='90%' height='50%'>
+
+For the baseline score, we filled NaN values with the average rating of the training set. Using this model, we obtained a score of 3.54.
