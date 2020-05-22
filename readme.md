@@ -15,7 +15,7 @@
 - [Technologies Used](#technologies)
 - [Challenges](#challenges)
 - [Exploring Data](#exploring-the-data)
-- [ALS in PySpark](#als-with-pyspark)
+- [ALS in PySpark](#als-in-pyspark)
 - []
 
 # Overview
