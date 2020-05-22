@@ -1,5 +1,7 @@
 ## Team REC or GET REC'D
 
+<img alt='film history' src='images/strobo.gif' width='60%' height='50%'>
+
 Movie Predictions with 'Cold Start' Users
 
 [Tyler Woods](https://github.com/tylerjwoods)  | [Isaac Campbell-Smith](https://github.com/isaac-campbell-smith) | [Feli Gentle](https://github.com/oro13)
