@@ -1,17 +1,21 @@
-## Team REC or GET REC'D
+# Movie Predictions with 'Cold Start' User
 
 <img alt='film history' src='images/strobo.gif' width='60%' height='50%'>
 
-Movie Predictions with 'Cold Start' Users
+|Team REC or GET REC'D|
+|---|
+[Tyler Woods](https://github.com/tylerjwoods)  | 
+|[Isaac Campbell-Smith](https://github.com/isaac-campbell-smith) |
+|[Feli Gentle](https://github.com/oro13)|
 
-[Tyler Woods](https://github.com/tylerjwoods)  | [Isaac Campbell-Smith](https://github.com/isaac-campbell-smith) | [Feli Gentle](https://github.com/oro13)
----|---|---|
 
 ## Table of Contents
 
 - [Basic Overview](#basic-overview)
-- [Exploring Data](#exploring-data)
-- [PySpark](#pyspark)
+- [Technologies Used](#technologies)
+- [Challenges](#challenges)
+- [Exploring Data](#exploring-the-data)
+- [ALS in PySpark](#als-with-pyspark)
 - []
 
 # Overview
@@ -32,18 +36,16 @@ Project: Recommending Movies for Users based on User movie ratings, demographic 
 - working between spark and python dataframes
 - 'Cold Start' issue of predicting on Users and Movies the trained model had not seen
 
-# The Data
+# Exploring the Data
 
 [MovieLens dataset](http://grouplens.org/datasets/movielens/)
+
 [IMDB Movie Metadata](https://www.kaggle.com/rounakbanik/the-movies-dataset/version/7?select=movies_metadata.csv)
 
-IMDB Movie Meta Data Set
-
-# EDA
 
 <img alt='word cloud' src='images/genres_wordcloud.png' width='90%' height='50%'>
 
 <img alt='movie ratings histogram' src='images/movie_ratings_histogram.png' width='45%' height='50%'>
 
-# Baseline Alternating Least Squares Model with Pyspark
+# ALS in Pyspark
 
