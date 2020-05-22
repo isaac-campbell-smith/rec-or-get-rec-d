@@ -57,6 +57,8 @@ For the baseline score, we filled NaN values with the average rating of the trai
 
 # CatBoost Regressor
 
-We wanted to improve our model's NaN values using a more sophisticated approach, so we turned to the CatBoost Gradient Boosted Regresion algorithm and gave it more features to train on. The MovieLens user data would help improve information for users the algorithm has not seen -- sex, age, occupation & zipcode. We also pulled out the year from the movie_title column and added runtime and language metadata from Kaggle's IMDB dataset. Our hope was to go even further and do some text classification on genre, keyword, and cast info but this proved to be way too computationally expensive. 
+We wanted to improve our model's NaN values using a more sophisticated approach, so we turned to the CatBoost Gradient Boosted Regresion algorithm and gave it more features to train on. The MovieLens user data would help improve information for users the algorithm has not seen -- sex, age, occupation & zipcode. We also pulled out the year from the movie_title column and added runtime and language metadata from Kaggle's IMDB dataset. Our hope was to go even further and do some text classification on genre, keyword, and cast info but this proved to be way too computationally expensive. The final data we trained on looked like this:
+
+<img alt='boosteddf' src='images/boosteddata.png' width='50%' height='50%'>
 
 Our expectation was that we could simply use the rating predictions from this model to simply improve our crude estimation of nan values, but the model alone resulted in a score of 4.29. Pretty good! 
