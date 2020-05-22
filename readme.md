@@ -16,7 +16,7 @@
 - [Challenges](#challenges)
 - [Exploring Data](#exploring-the-data)
 - [ALS in PySpark](#als-in-pyspark)
-- []
+- [CatBoost](#catboost-regressor)
 
 # Overview
 
@@ -54,3 +54,9 @@ Spark ALS model was used first as a baseline prediction. After training the mode
 <img alt='pyspark2' src='images/pyspark_2.png' width='90%' height='50%'>
 
 For the baseline score, we filled NaN values with the average rating of the training set. Using this model, we obtained a score of 3.54.
+
+# CatBoost Regressor
+
+We wanted to improve our model's NaN values using a more sophisticated approach, so we turned to the CatBoost Gradient Boosted Regresion algorithm and gave it more features to train on. The MovieLens user data would help improve information for users the algorithm has not seen -- sex, age, occupation & zipcode. We also pulled out the year from the movie_title column and added runtime and language metadata from Kaggle's IMDB dataset. Our hope was to go even further and do some text classification on genre, keyword, and cast info but this proved to be way too computationally expensive. 
+
+Our expectation was that we could simply use the rating predictions from this model to simply improve our crude estimation of nan values, but the model alone resulted in a score of 4.29. Pretty good! 
